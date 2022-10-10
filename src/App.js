@@ -12,10 +12,11 @@ function App() {
     {
       path: '/', element: <Main></Main>, children: [
         {
-          path: '/home', element: <Home></Home>
-        },
-        {
-          path: '/topics', element: <Topics></Topics>
+          path: '/home',
+          loader: () =>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Home></Home>
         },
         {
           path: '/statics', element: <Statics></Statics>
