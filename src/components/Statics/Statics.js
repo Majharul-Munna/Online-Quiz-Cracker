@@ -5,9 +5,9 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 const Statics = () => {
     const topics = useLoaderData();
     const rTopics = topics.data;
-    console.log(rTopics);
     return (
         <div className=' inline-block justify-center mt-14'>
+            <h1 className='text-3xl font-bold text-orange-400 mb-10'>Top Question Chart</h1>
             <BarChart width={600} height={300} data={rTopics}>
                 <XAxis dataKey="name" stroke="orange" />
                 <YAxis />
