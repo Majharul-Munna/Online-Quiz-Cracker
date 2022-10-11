@@ -13,9 +13,7 @@ const Blog = () => {
             </div>
             <div className=' bg-slate-200 my-5 py-4 rounded-md'>
                 <h2 className='text-3xl font-semibold'>All About useRef !</h2>
-                <p className='text-2xl mt-3 px-5'>useRef is a hook that can be tricky to get to grips with since it’s one that you might only meet once in a blue moon. That’s by design.
-
-But understanding what it is and what it does means gaining a much better understanding of how React works overall.</p>
+                <p className='text-2xl mt-3 px-5'>useRef is a hook that can be tricky to get to grips with since it’s one that you might only meet once in a blue moon. That’s by design.But understanding what it is and what it does means gaining a much better understanding of how React works overall.</p>
             </div>
         </div>
     );

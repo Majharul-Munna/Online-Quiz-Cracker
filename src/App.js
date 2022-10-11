@@ -28,7 +28,11 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/statics', element: <Statics></Statics>
+          path: '/statics',
+          loader: () =>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Statics></Statics>
         },
         {
           path: '/blog', element: <Blog></Blog>
