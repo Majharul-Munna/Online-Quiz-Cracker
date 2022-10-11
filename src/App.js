@@ -8,6 +8,7 @@ import Main from './layout/Main';
 import NotFound from './components/NotFound/NotFound';
 import Quiz from './components/Quiz/Quiz';
 import QuizTopics from './components/QuizTopics/QuizTopics';
+import Questions from './components/Questions/Questions';
 
 function App() {
   const router = createBrowserRouter([
@@ -50,7 +51,8 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
           },
           element: <Quiz></Quiz>
-        }
+        },
+        
       ]
     },
     {path: '*', element: <NotFound></NotFound>}
