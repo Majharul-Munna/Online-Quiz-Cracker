@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Header from '../Header/Header';
 import Topics from '../Topics/Topics';
 
 const Home = () => {
@@ -7,7 +8,9 @@ const Home = () => {
     const rTopics = topics.data;
     return (
         <div>
-            <h2>this is home {rTopics.length}</h2>
+            <div>
+                <Header></Header>
+            </div>
 
             {
                 rTopics.map(topic => <Topics 
