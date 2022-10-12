@@ -1,14 +1,12 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Topics from './components/Topics/Topics';
 import Statics from './components/Statics/Statics';
 import Blog from './components/Blog/Blog';
 import Main from './layout/Main';
 import NotFound from './components/NotFound/NotFound';
 import Quiz from './components/Quiz/Quiz';
 import QuizTopics from './components/QuizTopics/QuizTopics';
-import Questions from './components/Questions/Questions';
 
 function App() {
   const router = createBrowserRouter([

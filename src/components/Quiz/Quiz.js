@@ -6,6 +6,11 @@ const Quiz = () => {
     const quiz = useLoaderData();
     const rQuiz = quiz.data;
     const questions = rQuiz.questions;
+    
+    const showCorrectAns = question => {
+      console.log(question);
+    }
+
     return (
         <div>
           <div>
@@ -16,6 +21,7 @@ const Quiz = () => {
             questions.map(question => <Questions
             key={question.id}
             question={question}
+            showCorrectAns={showCorrectAns}
             ></Questions>)
           }
         </div>
